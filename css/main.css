@@ -281,14 +281,9 @@ footer {
     }
 
     .local {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .planets {
-        width: 30%;
-        margin: 20px 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
 
@@ -351,18 +346,16 @@ footer {
     }
 
     main {
-        max-width: 1200px;
-        margin: 40px 0;
+        margin: 10px 0;
+    }
+
+    main h3 {
+        text-align: left;
     }
 
     .local {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
         gap: 2rem;
-        flex-wrap: nowrap;
-    }
-
-    .planets {
-        width: 15%;
     }
 }
